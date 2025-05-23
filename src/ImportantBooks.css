@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6eceb;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 20px auto;
+    background: rgb(168, 193, 221);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1d52e2;
+  }
+  
+  .book-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .book-list li {
+    margin: 10px 0;
+  }
+  
+  .book-list a {
+    text-decoration: none;
+    color: #005fcc;
+    font-weight: bold;
+  }
+  
+  .book-list a:hover {
+    color: #005f99;
+    text-decoration: underline;
+  }
+  
+  .theme-toggle {
+    text-align: right;
+    padding: 10px 20px;
+  }
+  
+  .theme-toggle button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #007acc;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  .theme-toggle button:hover {
+    background: #005f99;
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    min-height: 100vh;
+  }
+  
+  .dark-mode .container {
+    background: #2c2c2c;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .book-list a {
+    color: #66d9ef;
+  }
+  
+  .dark-mode .book-list a:hover {
+    color: #8be9fd;
+  }
+  
+  .dark-mode .theme-toggle button {
+    background: #444;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .theme-toggle button:hover {
+    background: #666;
+  }
+  

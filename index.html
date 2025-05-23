@@ -1,55 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Important Books</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-    <div class="theme-toggle">
-        <button id="toggleBtn">🌙 Toggle Dark Mode</button>
-    </div>
-    <div class="container">
-        <h1>Important Books</h1>
-        <ul class="book-list">
-            <li><a href="HTML/html-handbook.pdf" target="_blank" rel="noopener noreferrer">HTML Handbook</a></li>
-            <li><a href="NextJS/nextjs-pages-router-handbook.pdf" target="_blank" rel="noopener noreferrer">Next.js Pages Router Handbook</a></li>
-            <li><a href="Alpine-js/alpine-handbook.pdf" target="_blank" rel="noopener noreferrer">Alpine.js Handbook</a></li>
-            <li><a href="HTMLX/htmx-handbook.pdf" target="_blank" rel="noopener noreferrer">HTMX Handbook</a></li>
-            <li><a href="TypeScript/typescript-handbook.pdf" target="_blank" rel="noopener noreferrer">TypeScript Handbook</a></li>
-            <li><a href="React/react-handbook.pdf" target="_blank" rel="noopener noreferrer">React Handbook</a></li>
-            <li><a href="sql/sql-handbook.pdf" target="_blank" rel="noopener noreferrer">SQL Handbook</a></li>
-            <li><a href="Git/git-cheat-sheet.pdf" target="_blank" rel="noopener noreferrer">Git Cheat Sheet</a></li>
-            <li><a href="Laravel-php/laravel-handbook.pdf" target="_blank" rel="noopener noreferrer">Laravel Handbook</a></li>
-            <li><a href="ExpressJS/express-handbook.pdf" target="_blank" rel="noopener noreferrer">Express Handbook</a></li>
-            <li><a href="Swift/swift-handbook.pdf" target="_blank" rel="noopener noreferrer">Swift Handbook</a></li>
-            <li><a href="Go-lang/go-handbook.pdf" target="_blank" rel="noopener noreferrer">Go Handbook</a></li>
-            <li><a href="PHP/php-handbook.pdf" target="_blank" rel="noopener noreferrer">PHP Handbook</a></li>
-            <li><a href="Python/python-handbook.pdf" target="_blank" rel="noopener noreferrer">Python Handbook</a></li>
-            <li><a href="Linux-Commands/linux-commands-handbook.pdf" target="_blank" rel="noopener noreferrer">Linux Commands Handbook</a></li>
-            <li><a href="C/c-handbook.pdf" target="_blank" rel="noopener noreferrer">C Handbook</a></li>
-            <li><a href="JS-Book/js-handbook.pdf" target="_blank" rel="noopener noreferrer">JavaScript Handbook</a></li>
-            <li><a href="CSS-Book/css-handbook.pdf" target="_blank" rel="noopener noreferrer">CSS Handbook</a></li>
-            <li><a href="NodeJS-Book/node-handbook.pdf" target="_blank" rel="noopener noreferrer">Node.js Handbook</a></li>
-        </ul>
-    </div>
-
-    <script>
-        const toggleBtn = document.getElementById("toggleBtn");
-        toggleBtn.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-
-            // Change button icon/text
-            if (document.body.classList.contains("dark-mode")) {
-                toggleBtn.textContent = "☀️ Toggle Light Mode";
-            } else {
-                toggleBtn.textContent = "🌙 Toggle Dark Mode";
-            }
-        });
-    </script>
-</body>
-
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
