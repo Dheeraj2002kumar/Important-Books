@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "./ImportantBooks.css";
+import Headers from "./Header";
 
 const books = [
   { name: "HTML Handbook", path: "/books/html-handbook.pdf" },
@@ -35,6 +36,21 @@ const books = [
   },
 ];
 
+const DataScienceBooks = [
+  {
+    name: "Introduction to Machine Learning",
+    path: "/books/INTRODUCTION-TO-MACHINE-LEARNING_Alex_Smola.pdf",
+  },
+  {
+    name: "Deep Learning",
+    path: "/books/deep-learning-material-dept-ece-ase-blr-1.pdf",
+  },
+  {
+    name: "Deep Learning Adaptive Compution and Machine Learning",
+    path: "/books/Deep-learning_ adaptive-computation-and-machine-learning.pdf",
+  },
+];
+
 
 const App = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -45,15 +61,26 @@ const App = () => {
 
     return (
         <div className={darkMode ? "dark-mode" : ""}>
+            <Headers />
             <div className="theme-toggle">
                 <button onClick={toggleTheme}>
                     {darkMode ? "☀️ Toggle Light Mode" : "🌙 Toggle Dark Mode"}
                 </button>
             </div>
             <div className="container">
-                <h1 className="heading">Important Books</h1>
+                <h1 className="heading">Programming Language</h1>
                 <ul className="book-list">
                     {books.map((book, index) => (
+                        <li key={index}>
+                            <a href={book.path} target="_blank" rel="noopener noreferrer">
+                                {book.name}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+                <h1 className="heading">Data Science Books</h1>
+                <ul className="book-list">
+                    {DataScienceBooks.map((book, index) => (
                         <li key={index}>
                             <a href={book.path} target="_blank" rel="noopener noreferrer">
                                 {book.name}

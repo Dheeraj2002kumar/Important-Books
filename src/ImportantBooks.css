@@ -17,7 +17,9 @@ body {
   
   h1 {
     text-align: center;
-    color: #1d52e2;
+    /* make the color gradient */
+    background: linear-gradient(90deg, #1d52e2, #00c6ff);
+    /* color: #1d52e2; */
   }
   
   .book-list {
@@ -31,13 +33,16 @@ body {
   
   .book-list a {
     text-decoration: none;
-    color: #005fcc;
+    /* make the font color is userfriendly */
+    color: #007acc;
     font-weight: bold;
   }
   
   .book-list a:hover {
-    color: #005f99;
-    text-decoration: underline;
+    /* when i hover the cursor then background color should look like gradient */
+    background: linear-gradient(90deg, #1d52e2, #00c6ff);
+    color: white; /* Changed to white for better contrast on gradient */
+    text-decoration: underline; /* Removed underline for a cleaner look with gradient */
   }
   
   .theme-toggle {

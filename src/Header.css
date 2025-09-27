@@ -1,0 +1,18 @@
+ /* make good looking navbar with gradient color */
+ .header{
+    background: linear-gradient(90deg, #1d52e2, #00c6ff);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+ }
+ .logo {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+ }
+
+React. 
