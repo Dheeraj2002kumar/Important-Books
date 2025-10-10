@@ -51,47 +51,71 @@ const DataScienceBooks = [
   },
 ];
 
+const QuantitativeAptitude = [
+  {
+    name: "Quantitative Aptitude",
+    path: "/books/Quantitative_Aptitude.pdf",
+  },
+  {
+    name: "Mixture and Alligation",
+    path: "/books/Mixture_and_Alligation__06_pages.pdf",
+  },
+  {
+    name: "Data Interpretation",
+    path: "/books/Data-Interpretation-Data-Sufficiency-and-Comprehension.pdf",
+  },
+];
 
 const App = () => {
-    const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-    const toggleTheme = () => {
-        setDarkMode(prev => !prev);
-    };
+  const toggleTheme = () => {
+    setDarkMode((prev) => !prev);
+  };
 
-    return (
-        <div className={darkMode ? "dark-mode" : ""}>
-            <Headers />
-            <div className="theme-toggle">
-                <button onClick={toggleTheme}>
-                    {darkMode ? "☀️ Toggle Light Mode" : "🌙 Toggle Dark Mode"}
-                </button>
-            </div>
-            <div className="container">
-                <h1 className="heading">Programming Language</h1>
-                <ul className="book-list">
-                    {books.map((book, index) => (
-                        <li key={index}>
-                            <a href={book.path} target="_blank" rel="noopener noreferrer">
-                                {book.name}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-                <h1 className="heading">Data Science Books</h1>
-                <ul className="book-list">
-                    {DataScienceBooks.map((book, index) => (
-                        <li key={index}>
-                            <a href={book.path} target="_blank" rel="noopener noreferrer">
-                                {book.name}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    );
+  return (
+    <div className={darkMode ? "dark-mode" : ""}>
+      <Headers />
+      <div className="theme-toggle">
+        <button onClick={toggleTheme}>
+          {darkMode ? "☀️ Toggle Light Mode" : "🌙 Toggle Dark Mode"}
+        </button>
+      </div>
+      <div className="container">
+        <h1 className="heading">Programming Language</h1>
+        <ul className="book-list">
+          {books.map((book, index) => (
+            <li key={index}>
+              <a href={book.path} target="_blank" rel="noopener noreferrer">
+                ✔️{book.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <h1 className="heading">Data Science Books</h1>
+        <ul className="book-list">
+          {DataScienceBooks.map((book, index) => (
+            <li key={index}>
+              <a href={book.path} target="_blank" rel="noopener noreferrer">
+                ✔️{book.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <h1 className="heading">Quantitative Aptitude</h1>
+        <ul className="book-list">
+          {QuantitativeAptitude.map((book, index) => (
+            <li key={index}>
+              <a href={book.path} target="_blank" rel="noopener noreferrer">
+                ✔️{book.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 };
-
 
 export default App;
