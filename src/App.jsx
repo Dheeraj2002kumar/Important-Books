@@ -34,6 +34,10 @@ const books = [
     name: "Software_Engineering_Principles",
     path: "/books/Software_Engineering_Principles.pdf",
   },
+  {
+    name: "DSA Cheet Sheet",
+    path: "/books/Only-Sheet-You-Need-for-DSA-Preparation.pdf",
+  },
 ];
 
 const DataScienceBooks = [
